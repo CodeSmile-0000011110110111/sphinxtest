@@ -25,10 +25,13 @@ jobs:
         persist-credentials: false
     - name: Setup Pages
       uses: actions/configure-pages@v5
-    - name: Build HTML
-      uses: ammaraskar/sphinx-action@master
-      with:
-        docs-folder: "./"
+#    - name: Build HTML
+#      uses: ammaraskar/sphinx-action@master
+#      with:
+#        docs-folder: ""
+    - name: Build
+      run: |
+        sphinx-build -M html "source" "build" --keep-going --no-color -w "/tmp/sphinx-log" 
     - name: Upload artifacts
       uses: actions/upload-artifact@v4
       with:
