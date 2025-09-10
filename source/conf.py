@@ -6,10 +6,10 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'sphinxtest'
+project = 'sphinx testing 123'
 copyright = '2025, me'
 author = 'me'
-release = 'first'
+release = 'first 0.0001'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
