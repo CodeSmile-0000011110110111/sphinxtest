@@ -19,6 +19,8 @@ jobs:
     permissions:
       contents: write
     steps:
+    - name: Python Version
+      run: echo "python --version"
     - name: Checkout
       uses: actions/checkout@v4
       with:
