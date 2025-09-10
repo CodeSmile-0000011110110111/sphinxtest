@@ -36,7 +36,6 @@ jobs:
     - name: Build
       run: |
         pip install --upgrade pip
-        pip install 
         pip install -r ./docs/requirements.txt
         pip install sphinx
         sphinx-build -M html "source" "build" --keep-going --no-color -w "/tmp/sphinx-log" 
