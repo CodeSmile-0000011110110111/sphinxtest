@@ -29,6 +29,10 @@ jobs:
 #      uses: ammaraskar/sphinx-action@master
 #      with:
 #        docs-folder: ""
+    - name: Set up Python 3.12
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.12'
     - name: Build
       run: |
         pip install --upgrade pip
